@@ -10,8 +10,6 @@ parser = BeautifulSoup(html, 'html.parser')
 title=[]
 contents=[]
 
-
-
 for tag in parser.select('h2[class=wiki-heading]'):
      title.append(tag.text.strip().replace('[편집]',' '))
 

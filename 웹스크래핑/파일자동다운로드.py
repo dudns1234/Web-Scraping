@@ -6,6 +6,7 @@ html = urllib.request.urlopen(url)      # url 열기
 html_contents = str(html.read().decode("utf8")) # html 파일 읽고, 문자열로 변환
 
 url_list = re.findall(r"(http)(.+)(zip)", html_contents)  # html 파일 읽고, 문자열로 변환
+
 for url in url_list:
     full_url = "".join(url)                               # 출력된 튜플 형태 데이터 문자열로 join
     print(full_url)

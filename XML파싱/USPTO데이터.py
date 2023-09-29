@@ -1,3 +1,4 @@
+# 미국 특허청(USPTO)의 특허 데이터는 XML 파싱
 import urllib.request
 from bs4 import BeautifulSoup
 

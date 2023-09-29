@@ -1,3 +1,5 @@
+# BeautifulSoup 모듈 사용법
+
 from bs4 import BeautifulSoup
 
 with open("books.xml", "r", encoding="utf8")as books_file:
